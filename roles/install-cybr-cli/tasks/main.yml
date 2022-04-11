@@ -1,0 +1,6 @@
+---
+- name: Install cybr-cli
+  apt:
+    name: cybr-cli
+    state: present
+    update_cache: yes

@@ -1,2 +1,8 @@
 ---
-# tasks file for os-patching
+- name: Update apt repo and cache
+  apt:
+    update_cache: yes
+
+- name: Update all apt packages
+  apt:
+    upgrade: yes
