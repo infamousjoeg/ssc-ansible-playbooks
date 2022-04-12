@@ -1,7 +1,7 @@
 ---
 - name: Show Package Info for cybr-cli
   shell:
-    cmd: apt-cache show cybr-cli
+    cmd: dpkg -l | grep cybr-cli
   register: info
 
 - name: Display Package Info
